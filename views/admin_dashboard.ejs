@@ -1,3 +1,5 @@
+
+<!-- Admin Dashboard -->
 <% if(locals.user && locals.user.role ==='admin') {%>
 <div class="container-fluid p-4">
   <h1 class="mx-auto text-center fw-bold">All Employees</h1>
@@ -10,35 +12,34 @@
           alt=""
           style="width: 60px"
         />
-        <h5 class="card-title"><%= user.username %></h5>
-        <h6 class="card-subtitle mb-2 text-secondary"><%= user.email %></h6>
-        <p class="card-subtitle mb-2 text-muted"><b>Role:</b> <span class="text-capitalize"><%= user.role %></span></p>
+        <h5 class="card-title fw-semibold"><%= user.username %></h5>
+        <h6 class="card-subtitle mb-2 text-secondary fw-semibold"><%= user.email %></h6>
+        <p class="card-subtitle mb-2 text-muted"><b>Role:</b> <span class="text-capitalize fw-semibold"><%= user.role %></span></p>
         <div class="d-flex flex-wrap justify-content-between">
-          <!-- delete button -->
+          <!-- Delete button -->
           <a
             href="/destroy/<%= user._id %>"
-            class="btn btn-danger mb-1"
+            class="btn btn-danger mb-1 fw-semibold"
             style="width: 48%"
             ><i class="fa-solid fa-trash-can"></i> Delete</a
           >
-          <!-- edit button -->
+          <!-- Edit button -->
           <a
             href="/edit-employee/<%= user._id %>"
-            class="btn btn-warning mb-1"
+            class="btn btn-warning mb-1 fw-semibold"
             style="width: 48%"
             ><i class="fa-solid fa-pen-to-square"></i> Edit</a
           >
 
-          <!-- asign review button -->
+          <!-- Assign review button -->
           <a
             href=""
-            class="btn btn-primary mb-1 my-1"
+            class="btn btn-primary mb-1 my-1 fw-semibold"
             style="width: 100%"
             data-bs-toggle="modal"
             data-bs-target="#user<%= user.id %>"
             data-bs-whatever="@mdo"
-            ><i class="fa-solid fa-file-circle-plus"></i> Assign Review</a
-          >
+            ><i class="fa-solid fa-file-circle-plus"></i> Assign Review</a>
 
           <!-- Model for assigning review -->
           <div

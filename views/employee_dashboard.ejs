@@ -1,9 +1,10 @@
+<!-- Employee Dashboard -->
 <% if(locals.user) {%>
 <div class="container-fluid">
   <div class="row">
     <!-- Assigned reviews -->
     <div class="col-md-12 col-lg-7 my-2">
-      <h1 class="text-center">Assigned Reviews</h1>
+      <h2 class="text-center fw-semibold">Assigned Reviews</h2>
       <div class="d-flex justify-content-center align-items-center">
         <div
           class="d-flex flex-wrap justify-content-center justify-content-lg-start ms-lg-4"
@@ -54,7 +55,7 @@
 
     <!-- Feedbacks given by others -->
     <div class="col-12 col-lg-5 my-2">
-      <h1 class="text-center">Feedbacks by others</h1>
+      <h2 class="text-center fw-semibold">Feedbacks by others</h2>
 
       <div class="d-flex flex-column justify-content-center align-items-center">
         <% for (review of reviewsFromOthers) {%>

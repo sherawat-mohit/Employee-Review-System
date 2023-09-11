@@ -1,14 +1,14 @@
 <div class="d-flex justify-content-center p-4 p-md-0">
   <form
-    class="rounded p-3 col-12 col-md-4 my-4 shadow-lg"
+    class="rounded p-3 col-12 col-md-4 my-4"
     method="POST"
-    style=""
+    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;"
     action="/create-session"
   >
-    <h3 id="sign-heading" class="mb-4 text-center">Sign in</h3>
+    <h3 id="sign-heading" class="mb-4 text-center fw-bold">Sign in</h3>
     <!-- Email input -->
     <div class="form-outline mb-3">
-      <label class="form-label" for="email">Email Address</label>
+      <label class="form-label fw-semibold" for="email">Email Address</label>
       <input
       type="email"
       id="email"
@@ -19,7 +19,7 @@
 
     <!-- Password input -->
     <div class="form-outline mb-3">
-      <label class="form-label" for="password">Password</label>
+      <label class="form-label fw-semibold" for="password">Password</label>
       <input
         type="password"
         placeholder="Enter Password"
@@ -34,9 +34,8 @@
       <button
         type="submit"
         class="btn btn-primary btn-block fw-semibold"
-        style="width: 100%"
-      >
-        LOGIN
+        style="width: 100%">
+        LOG IN
       </button>
     </div>
     <div>
@@ -44,8 +43,8 @@
     </div>
 
     <!-- Link to redirect to signup page -->
-    <div class="text-center">
-      <p>Not an user? <a href="/sign-up">Register</a></p>
+    <div class="text-center fw-semibold">
+      <p>Not a User? <a href="/sign-up">Register Here</a></p>
     </div>
   </form>
 </div>

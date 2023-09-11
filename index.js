@@ -1,4 +1,4 @@
-
+// importing required packages
 const express = require('express');
 const cookieParser = require('cookie-parser'); // parse cookie header and populate req.cookies
 const bodyParser = require('body-parser'); // parses incoming request bodies (req.body)
@@ -12,17 +12,19 @@ const MongoStore = require('connect-mongo')(session);
 const flash = require('connect-flash');
 const customMware = require('./config/middleware');
 
+// setting up port
 const port = 3000;
 
+// setting up express
 dotEnv.config();
 const app = express();
 const { PORT, MONGODB_URL, SESSION_SECRET_KEY } = process.env;
 
-// used for session cookie
 
-
+// using inbuilt body parser in express for request 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// used for session cookie
 app.use(cookieParser());
 
 app.use(expressLayouts);
@@ -63,9 +65,10 @@ app.use(customMware.setFlash);
 // use express router
 app.use('/', require('./routes'));
 
+//listening to the server
 app.listen( port, (err) => {
   if (err) {
     console.log(`Error in running the server: ${err}`);
   }
-  console.log(`Server is running on port: ${port}`);
+  console.log(`Server is up and running on port: ${port}`);
 });

@@ -1,14 +1,15 @@
 <div class="d-flex justify-content-center p-4 p-md-0">
   <form
-    class="rounded p-3 col-12 col-md-4 mt-4 shadow-lg"
+    class="rounded p-3 col-12 col-md-4 mt-4 "
     action="/create"
+    style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;"
     method="POST"
   >
-    <h3 class="mb-3 text-center">Sign Up</h3>
+    <h3 class="mb-3 text-center fw-bold">Sign Up</h3>
 
     <!-- Username input -->
     <div class="form-outline mb-2">
-      <label class="form-label" for="username">User Name</label>
+      <label class="form-label fw-semibold" for="username">User Name</label>
       <input
         type="text"
         id="name"
@@ -21,7 +22,7 @@
 
     <!-- Email input -->
     <div class="form-outline mb-2">
-      <label class="form-label" for="email">Email Address</label>
+      <label class="form-label fw-semibold" for="email">Email Address</label>
       <input
         type="email"
         id="email"
@@ -34,7 +35,7 @@
 
     <!-- Password input -->
     <div class="form-outline mb-2">
-      <label class="form-label" for="password">Password</label>
+      <label class="form-label fw-semibold" for="password">Password</label>
       <input
         type="password"
         id="password"
@@ -47,7 +48,7 @@
 
     <!-- Confirm password input -->
     <div class="form-outline mb-2">
-      <label class="form-label" for="confirm_password">Confirm password</label>
+      <label class="form-label fw-semibold" for="confirm_password">Confirm password</label>
       <input
         type="password"
         id="confirm_password"
@@ -60,7 +61,7 @@
 
     <!-- User role input -->
     <div class="form-outline mb-2">
-      <label class="form-label" for="role">Role</label>
+      <label class="form-label fw-semibold" for="role">Role</label>
       <select
         class="form-select"
         id="role"
@@ -86,8 +87,8 @@
     </div>
 
     <!-- Link to redirect to login page -->
-    <div class="text-center">
-      <p>Already Registered? <a href="/">Login</a></p>
+    <div class="text-center fw-semibold">
+      <p>Already Registered? <a href="/">Log in</a></p>
     </div>
   </form>
 </div>

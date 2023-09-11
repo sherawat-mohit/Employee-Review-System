@@ -1,3 +1,4 @@
+<!-- Edit employee page -->
 <% if (locals.user) {%>
   <div class="d-flex flex-column flex-md-row justify-content-around  p-2">
     <div class="container mt-4 col-md-4 ">
@@ -8,24 +9,25 @@
         action="/update-employee/<%= employee._id %>" 
         method="POST">
 
-        <!-- Name input -->
+        <!-- Name input field -->
         <div class="form-outline ">
           <label class="form-label fw-bold" for="username">User Name</label>
           <input type="text" id="name" name="username" class="form-control" value="<%= employee.username %>" required />
         </div>
 
-        <!-- Email input -->
+        <!-- Email input field -->
         <div class="form-outline ">
           <label class="form-label fw-bold" for="email">Email Address</label>
           <input type="email" id="email" name="email" class="form-control" value="<%= employee.email %>" readonly
             required />
         </div>
 
+        <!-- Employee Role -->
         <div>
           <span class="fw-semibold fw-bold">Current role: <span class="text-capitalize" style="color: red;"><%= employee.role %></span></span>
         </div>
 
-        <!-- role input -->
+        <!-- Role input field -->
         <div class="form-outline mb-2">
           <label class="form-label fw-bold" for="role">Select Role</label>
           <select class="form-select" id="role" name="role" aria-label="Default select example" required>
@@ -34,15 +36,15 @@
           </select>
         </div>
 
+        <!-- Update button -->
         <div class="d-flex  justify-content-end" >
           <button type="submit" class="btn btn-primary fw-bold" style="width:fit-content;padding: 5px 15px;border-radius: 10px;">Update</button>
         </div>
-
       </form>
     </div>
 
 
-    <!-- Reviews section -->
+    <!-- Reviews and Feedback from other users section -->
     <div class="container mt-4 col-md-4 ">
       <h4 class="text-center text-capitalize fw-bold">Feedbacks given by other users</h4>
 
@@ -63,16 +65,10 @@
             <div class="d-flex justify-content-end">
               <button class="btn btn-primary mt-2" type="submit" style="width: 40%;">Update</button>
             </div>
-
           </form>
           <%} %>
         </div>
-
-
       </div>
-
     </div>
-
   </div>
-
   <%} %>
