@@ -3,42 +3,31 @@ This *Employee review System* is a web application created to manage the perform
 
 ## Steps for setting up Employee Review System
 1. Clone this repository using the following command:
-`gh repo clone sherawat-mohit/Employee-Review-System`
+```gh repo clone sherawat-mohit/Employee-Review-System```
 
 2. Install the required dependencies using the following command:
-`npm install` 
+```npm install``` 
 
 3. Start the application using the following command:
-`node index.js` 
+```node index.js``` 
 
 4. Open the application in your web browser by visiting the following URL:
-`http://localhost:3000` 
+```http://localhost:3000``` 
 
-## From Admin's panel
-- Add employee
-- Delete employee
-- Update employee details
-- Assign review to employee
-- Update review of employee
+## Steps to use Employee Review System
+1. User have to *log in* or *Sign up* as an **Admin** or **Employee** 
+2. Certain Panel with different set of features will be opened based on the *role of the employee*.
+3. From **Admin Panel**:
+    * Add Employee
+    * Delete Employee
+    * Update Employee details
+    * Assign review to Employee
+    * Update review of Employee
+4. From **Employee Panel**:
+    * Submit reviews assigned to it
+    * View reviews given by others
 
-### From Employee's panel
-- Submit reviews assigned to it
-- View reviews given by others
-
-## How to setup the project on local system
-- Clone this project from https://github.com/
-- Start by installing npm if you don't have it already.
-- Navigate to Project Directory and run the following the command.
-```bash
-npm install
-```
-- Run project
-```bash
-npm start or nodemon index.js
-```
-- visit in your local browser- http://localhost:3000/
- 
-## TECHSTACK
+## Tech Stack
 * Node.js
 * MongoDB
 * Express.js
