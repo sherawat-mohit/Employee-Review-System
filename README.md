@@ -6,13 +6,19 @@ This *Employee review System* is a web application created to manage the perform
 ```gh repo clone sherawat-mohit/Employee-Review-System```
 
 2. Install the required dependencies using the following command:
-```npm install``` 
+```
+npm install
+``` 
 
 3. Start the application using the following command:
-```node index.js``` 
+```
+node index.js
+``` 
 
 4. Open the application in your web browser by visiting the following URL:
-```http://localhost:3000``` 
+```
+http://localhost:3000
+``` 
 
 ## Steps to use Employee Review System
 1. User have to *log in* or *Sign up* as an **Admin** or **Employee** 
