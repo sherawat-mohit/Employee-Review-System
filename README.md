@@ -39,7 +39,8 @@ npm start or nodemon index.js
 - visit in your local browser- http://localhost:3000/
  
 ## TECHSTACK
-    * Node.js
-    * MongoDB
-    * Express.js
-    * passport.js
+* Node.js
+* MongoDB
+* Express.js
+* passport.js
+* Bootstrap
