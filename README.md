@@ -3,7 +3,9 @@ This *Employee review System* is a web application created to manage the perform
 
 ## Steps for setting up Employee Review System
 1. Clone this repository using the following command:
-```gh repo clone sherawat-mohit/Employee-Review-System```
+```
+gh repo clone sherawat-mohit/Employee-Review-System
+```
 
 2. Install the required dependencies using the following command:
 ```
