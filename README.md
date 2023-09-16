@@ -1,10 +1,20 @@
-# Employee-Review-System
-This Employee review web application is created for employees to submit feedback toward each other's performance. User's could have either "employee" or "admin" role. There are two dashboard pages based on the role of the employee those dashboard pages will be rendered, User with role of admin can assign employees to participate in review of other employees. Employees can only submit feedback required by assigned reviews.
-### Hosted link: 
-### Video link: 
+# Employee Review System
+This *Employee review System* is a web application created to manage the performance ratings of employees. Here, employees can submit feedback toward each other's performance. User's could have either **Employee** or **Admin** role. There are two dashboard pages based on the role of the employee those dashboard pages will be rendered, User with role of **Admin** can assign employees to participate in review of other employees. Employees can submit feedback required by assigned reviews.
 
-## Inside this project
-### From Admin's panel
+## Steps for setting up Employee Review System
+1. Clone this repository using the following command:
+`gh repo clone sherawat-mohit/Employee-Review-System`
+
+2. Install the required dependencies using the following command:
+`npm install` 
+
+3. Start the application using the following command:
+`node index.js` 
+
+4. Open the application in your web browser by visiting the following URL:
+`http://localhost:3000` 
+
+## From Admin's panel
 - Add employee
 - Delete employee
 - Update employee details
@@ -28,25 +38,8 @@ npm start or nodemon index.js
 ```
 - visit in your local browser- http://localhost:3000/
  
-## Tech Stack
-- NodeJS
-- MongoDB
-- ExpressJS
-- EJS
-- Bootstrap
-
-## Libraries:
-
-- bcryptjs
-- connect-flash
-- connect-mongo
-- cookie-parser
-- dotenv
-- ejs
-- express
-- express-ejs-layout
-- express-session
-- mongoose
-- passport
-- passport-jwt
-- passport-local
+## TECHSTACK
+    * Node.js
+    * MongoDB
+    * Express.js
+    * passport.js
