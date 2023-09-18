@@ -25,13 +25,13 @@ http://localhost:3000
 ## Steps to use Employee Review System
 1. User have to *log in* or *Sign up* as an **Admin** or **Employee** 
 2. Certain Panel with different set of features will be opened based on the *role of the employee*.
-3. From **Admin Panel**:
+3. Features of **Admin Panel**:
     * Add Employee
     * Delete Employee
     * Update Employee details
     * Assign review to Employee
     * Update review of Employee
-4. From **Employee Panel**:
+4. Features of  **Employee Panel**:
     * Submit reviews assigned to it
     * View reviews given by others
 
