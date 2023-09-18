@@ -2,7 +2,7 @@
 This *Employee review System* is a web application created to manage the performance ratings of employees. Here, employees can submit feedback toward each other's performance. User's could have either **Employee** or **Admin** role. There are two dashboard pages based on the role of the employee those dashboard pages will be rendered, User with role of **Admin** can assign employees to participate in review of other employees. Employees can submit feedback required by assigned reviews.
 
 ## Steps for setting up Employee Review System
-1. Clone this repository using the following command:
+1. Clone this repository from the project directory using the following command:
 ```
 gh repo clone sherawat-mohit/Employee-Review-System
 ```
